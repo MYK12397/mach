@@ -14,14 +14,12 @@ Every structured logger in Go pays the same costs: buffer allocation, JSON encod
 - **No logger-level mutex** — each goroutine encodes into its own pooled buffer and writes directly to the output. Locking is opt-in at the writer level via `SyncWriter()`.
  
 ## Install
- 
+
 ```
-go get github.com/MYK12397/gohotpool
+go get github.com/MYK12397/mach
 ```
- 
-mach lives alongside gohotpool. Copy the `mach/` package into your project or reference it as a local module.
- 
-## Usage
+
+mach is a standalone package with a single external dependency on [gohotpool](https://github.com/MYK12397/gohotpool).## Usage
  
 ```go
 package main
@@ -30,7 +28,7 @@ import (
     "os"
     "time"
  
-    "mach"
+    "github.com/MYK12397/mach"
 )
  
 func main() {
