@@ -19,7 +19,9 @@ Every structured logger in Go pays the same costs: buffer allocation, JSON encod
 go get github.com/MYK12397/mach
 ```
 
-mach is a standalone package with a single external dependency on [gohotpool](https://github.com/MYK12397/gohotpool).## Usage
+mach is a standalone package with a single external dependency on [gohotpool](https://github.com/MYK12397/gohotpool).
+
+## Usage
  
 ```go
 package main
